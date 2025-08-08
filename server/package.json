@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-   "start": "node index.js",
-   "build": "cd ../client && npm install && npm run build && cp -r build ../server/build"
+    "start": "node index.js",
+    "build": "cd ../client && npm install && npm run build && npx cpx -r build/** ../server/build"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.1.0",
-    "morgan": "^1.10.1"
+    "morgan": "^1.10.1",
+    "cpx": "^1.5.0"
   }
 }
